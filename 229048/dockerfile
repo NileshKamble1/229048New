@@ -1,6 +1,6 @@
 FROM node:12
 WORKDIR /awsTest
-COPY package.jason /awsTest
+COPY package.json /awsTest
 RUN npm install
 COPY . /awsTest
 CMD node server.js
