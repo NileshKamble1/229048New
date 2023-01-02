@@ -1,1 +1,81 @@
 node_modules/
+/*Create folder newfolder 
+In same folder open cmd
+
+NewFolder>npm init
+NewFolder>npm install express
+NewFolder>
+
+Open VScode
+Add Public Folder
+Add server.js → 
+const express=require("express");
+Const app=express ();
+Const path=require("path");
+
+App.get("/",function(req,res){
+res.sendFile (path.join(__dirname,"/public/index.html"));
+});
+App.get("/form",function(req,res){
+res.sendFile (path.join(__dirname,"/public/form.html"));
+});
+
+app.listen(3000);
+Console.log("at 3000"):
+
+
+
+Create Dockerfile
+
+FROM node:12
+Workdir /awstest
+Copy package.json  /awstest
+Run NPM Install
+Copy . /Awstest
+Cmd run server.js
+Expose 8000
+
+
+Create .gitignore file
+
+node_modules/
+
+
+Create newfolderfor git clone
+
+
+Open cmd1
+
+Open GitHub
+Create repository
+Copy link
+
+Go to Cmd1
+
+Git clone url 
+Git status
+Git add .
+Git commit -m "added"
+Plgit push
+
+
+Go to AWS 
+Create instance
+In AWS cmd
+
+Sudo yum update
+Sudo yum install git
+Sudo yum install docker
+Sudo systemctl start docker
+Sudo systemctl enable docker
+Sudo systemctl  status docker
+
+Git clone url
+Ls
+Go to Dockerfile folder
+Sudo docker build -t  newname
+Sudo docker images
+Sudo docker run -d -p 8000:3000 newfilename
+Sudo docker ps */
+
+
